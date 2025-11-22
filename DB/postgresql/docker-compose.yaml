@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=dev
+      - POSTGRES_PASSWORD=oLfIr4LK04zC5DSdtEPxxe4pS0yicDL4VrNjAlCPVBDkVu2Tr55BU3FxY6kIZKa7LqFcSVJC
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local

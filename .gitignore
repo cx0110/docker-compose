@@ -1,0 +1,77 @@
+# 数据库存储卷目录
+*-volume/
+**/datadir/
+**/data/
+
+# MongoDB 数据文件
+**/mongo-volume/
+*.wt
+mongod.lock
+WiredTiger*
+*.mongodb/
+
+# MySQL 数据文件
+**/mysql-volume/
+**/ib_*
+*.ibd
+*.frm
+*.MYD
+*.MYI
+*.cnf
+
+# PostgreSQL 数据文件
+**/pgdata/
+postgresql.conf
+pg_hba.conf
+
+# Redis 数据文件
+dump.rdb
+*.rdb
+appendonly.aof
+*.aof
+
+# 日志文件
+*.log
+logs/
+**/logs/
+**/log/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+*.pid
+*.lock
+
+# 系统生成的文件
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE 文件
+.vscode/
+.idea/
+*.iml
+
+# 运行时配置
+.env.local
+.env.*.local
+config/local/
+*.local.*
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 缓存目录
+.cache/
+cache/
+
+# 容器相关但非配置文件
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.yaml
